@@ -31,4 +31,16 @@ fetch("https://jsonplaceholder.typicode.com/users").then(function(placeholder){
     }
   }
   document.body.appendChild(lista)
+  return uss;
+}).then(function stocazzo(mawhat){
+    let gg = document.createElement('h1')
+    gg.textContent = 'EMAIL'
+    let n = document.createElement('div')
+  for (i=0;i<mawhat.length;i++){
+    let ess = document.createElement('p')
+    ess.textContent = mawhat[i].email
+    n.appendChild(ess)
+  }
+  document.body.appendChild(gg)
+  document.body.appendChild(n)
 })

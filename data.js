@@ -18,4 +18,17 @@ fetch("https://jsonplaceholder.typicode.com/users").then(function(placeholder){
     nomecittà.appendChild(li)
   }
   document.body.appendChild(nomecittà)
+
+  return result;
+}).then(function(uss){
+
+  let lista = document.createElement('ul')
+  for (i=0; i<uss.length;i++){
+    if (uss[i].address.city === 'McKenziehaven' || uss[i].address.city === 'Bartholomebury'){
+      let li = document.createElement('li')
+      li.textContent = uss[i].name
+      lista.appendChild(li)
+    }
+  }
+  document.body.appendChild(lista)
 })
